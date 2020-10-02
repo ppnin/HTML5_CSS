@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee preferences</title>
+</head>
+<body>
+
+
+
+<h1>The purpose of this short survey is to give our HR team better understanding of your interesets. Whenever possible, we would like to organise your working tasks according to your preferences. We hope that you'll see the survey as a way of improving your working environment and submit it as soon as possible.</h1>
+
+
+
+
+
+<br>
+<p >
+<label for="fname"> <strong> Name: </strong> </label>  <input type="text" id="fname" name="fname" size = "35" maxlength="25">
+</p>
+
+<br>
+<br>
+
+<br>
+<label for="textTest">Describe briefly your interests (no more than few sentences) </label> <br>
+<br>
+<!-- 
+Ref:
+https://www.phpforkids.com/html/html-form-check-boxes-radio-buttons.php -->
+
+<style>
+  textarea {background-color:#EFEEEC;}
+</style>
+
+<textarea id="textTest"  name="Text area" rows="4" cols="30">
+Some text... 
+</textarea> 
+
+
+
+<br>
+<br>
+<br>
+<!-- https://www.phpforkids.com/html/html-form-check-boxes-radio-buttons.php -->
+
+<p> <em> Do you do any sport/exercise? </em> </p> 
+
+<form method="post">
+  <input type="radio" name="sport" id="yes" value="yes"/> Yes  <br>
+  <input type="radio" name="sport" id="no"  value="no"/>  No   <br>
+</form>
+
+<br>
+<br>
+
+<p> <strong><em> How do you inform yourself about interesting subjects? </strong></em> </p> 
+
+<form action="" method="post">
+  <input type="checkbox" name="inform1" value="books" /> Books            <br> 
+  <input type="checkbox" name="inform2" value="newspapers" /> Newspaper   <br> 
+  <input type="checkbox" name="inform3" value="online" /> Online          <br>
+</form>
+
+<br>
+<br>
+
+
+
+<p>  What is your favourite movie genre? </p>
+
+<!-- 
+
+Ref:
+https://stackoverflow.com/questions/7280389/scrollable-box-containing-list-of-checkboxes-in-html
+-->
+
+<style>
+  .container { border:1px solid #ccc; width:280px; height: 90px; overflow-y: scroll; }
+</style>
+
+
+<div class="container">
+  <form method="post">
+    <input type="radio" name="movies" /> Action   <br>
+    <input type="radio" name="movies" /> Romantic <br>
+    <input type="radio" name="movies" /> Comedy   <br>
+    <input type="radio" name="movies" /> Drama    <br>
+    <input type="radio" name="movies" /> Horror   <br>
+  </form> 
+</div>
+
+
+ <br>
+ <br>
+
+<input type="submit" value="Submit">
+<p> <em>  <strong> Note:</strong>  your answers will be stored on the company's server during the time that we need to evaluate the survey. </em> </p>
+
+
+
+
+</body>
+</html>
