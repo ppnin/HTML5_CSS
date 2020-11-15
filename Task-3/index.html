@@ -2,51 +2,86 @@
 <html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-11.css">
     <!-- Sharing elements acroos pages (with jQuary), example from:
     https://www.quora.com/How-do-I-include-a-header-and-footer-file-in-every-HTML-page-we-are-designing?share=1-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function() {
+            $('#hdr').load("global/hdrmenue.html");
             $('#ftr').load("global/footer.html");
-            $('#nav').load("global/navigation.html");
         });
     </script>
 
 </head>
 
 <body>
-    <div class="wrap">
+
+    <header id="hdr"></header>
+
+    <img class="start-img" src="images/home/start/sofa-3.jpeg" alt="">
+    <!-- Midle container -->
+    <main>
+        <!-- <img class="start-img" src="images/sofa-1.jpeg" alt=""> -->
+
+        <h1> Welcome to BlueSofa</h1>
+        <!-- <h2>  </h2> -->
+        <p> We offer a wide sortiment of new and second-hand furniture, with focus on sofas.</p>
+        <p> Our speciality is luxury furniture at reasonable prices. Contact us for more information,
+            we are happy to help you!</p>
 
 
-        <div class="header">
-            Header
+
+    </main>
+
+    <div class="recent">
+        <p> Recent items </p>
+    </div>
+
+
+    <div class="container">
+        <div class="card">
+            <img src="images/home/recent/s1.jpeg" alt="">
+            <h3>14 000 kr</h3>
         </div>
-
-        <!-- Sidebar -->
-        <div class="leftpanel">
-            <div id="nav"> </div>
+        <div class="card">
+            <img src="images/home/recent/s2.jpeg" alt="">
+            <h3>2 000 kr</h3>
         </div>
-
-        <!-- Midle container -->
-        <div class="content">
-            <p> Main content here.. </p>
+        <div class="card">
+            <img src="images/home/recent/s3.jpeg" alt="">
+            <h3>17 000 kr</h3>
         </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div id="ftr"> </div>
+        <div class="card">
+            <img src="images/home/recent/s4.jpeg" alt="">
+            <h3>12 000 kr</h3>
         </div>
-
+        <div class="card">
+            <img src="images/home/recent/s5.jpeg" alt="">
+            <h3>15 000 kr</h3>
+        </div>
+        <div class="card">
+            <img src="images/home/recent/s6.jpeg" alt="">
+            <h3>13 000 kr</h3>
+        </div>
+        <div class="card">
+            <img src="images/home/recent/s7.jpeg" alt="">
+            <h3>11 000 kr</h3>
+        </div>
+        <div class="card">
+            <img src="images/home/recent/s8.jpeg" alt="">
+            <h3>21 000 kr</h3>
+        </div>
 
     </div>
 
 
+    <!-- Footer -->
+    <footer id="ftr"></footer>
+
 </body>
-
-
 
 </html>
