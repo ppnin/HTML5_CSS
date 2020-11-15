@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style-11.css">
+    <!-- Sharing elements acroos pages (with jQuary), example from:
+    https://www.quora.com/How-do-I-include-a-header-and-footer-file-in-every-HTML-page-we-are-designing?share=1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#hdr').load("global/hdrmenue.html");
+            $('#ftr').load("global/footer.html");
+        });
+    </script>
+
+</head>
+    <body>
+        <header id="hdr">
+        </header>
+
+        <div class="gallery-intro">
+            <h4> We proudly present some of our luxury sofas. Contact us for details. </h4>
+        </div>
+
+
+        <div class="gallery">
+            <div class="card">
+                <img src="images/gallery/en1.jpeg" alt="">
+                <p>Paddington, English casual style</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/en2.jpeg" alt="">
+                <p>Nightly, English modern style</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/en3.jpeg" alt="">
+                <p> Yorkshire, English vintage style </p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/it1.jpeg" alt="">
+                <p>BellAmi, Italian mdoern style</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/it2.jpeg" alt="">
+                <p>Torino, Italian casual style</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/it3.jpeg" alt="">
+                <p>Grandino, Italian style</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/it4.jpeg" alt="">
+                <p>Piccolo, Italian vintage style</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery/fr1.jpeg" alt="">
+                <p>Le Feaux, Franche vintage style</p>
+            </div>
+
+        </div>
+
+        <footer id="ftr">
+
+        </footer>
+
+    </body>
+</html>

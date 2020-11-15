@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style-11.css">
+    <!-- Sharing elements acroos pages (with jQuary), example from:
+    https://www.quora.com/How-do-I-include-a-header-and-footer-file-in-every-HTML-page-we-are-designing?share=1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#hdr').load("global/hdrmenue.html");
+            $('#ftr').load("global/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header id="hdr">
+    </header>
+
+    <div class="contact">
+        <div class="map">
+            <!--
+                <br>
+                <label for="map-img">Find us </label>
+                <br>
+                -->
+            <p> We are here.. </p>
+            <img class="img" id="map-img" src="images/contact/map.png" alt="">
+        </div>
+
+        <div class="user-input">
+            <!--
+                <br>
+                <label for="user-msg">Message </label>
+                <br>
+                -->
+            <p> Message </p>
+            <!-- label for="user-msg">Message </label -->
+            <textarea class="message" id="user-msg" rows="15" placeholder="Text here.."></textarea>
+            <!-- p> Name </p -->
+            <p>
+            <label for="flname">Name </label> <br>
+            <input type="text" id="flname" maxlength="25">
+            </p>
+            <!--div class="uname">
+
+            </div -->
+
+            <!-- p> Telephone </p -->
+            <p>
+            <label for="teleph">Phone </label> <br>
+            <input type="text" id="teleph" maxlength="25">
+            </p>
+            <!--div class="tel">
+
+            </div-->
+
+            <!-- p> E-mail </p -->
+            <p>
+            <label class="e-mail" for="e-mail">E-mail </label> <br>
+            <input type="text" id="e-mail" maxlength="25">
+            </p>
+            <!--div class="e-mail">
+
+            </div-->
+
+            <div class="send">
+                <input type="submit" value="Submit">
+            </div>
+
+
+        </div>
+
+    </div>
+
+   <main>
+
+   </main>
+    <!-- Footer -->
+    <footer id="ftr"></footer>
+
+
+
+
+
+</body>
+
+</html>
