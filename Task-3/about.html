@@ -2,46 +2,57 @@
 <html lang="en">
 
 <head>
-    <title>About Us</title>
+    <title>About</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-11.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function() {
+            $('#hdr').load("global/hdrmenue.html");
             $('#ftr').load("global/footer.html");
-            $('#nav').load("global/navigation.html");
         });
     </script>
 </head>
 
 <body>
 
-    <div class="wrap">
+
+    <header id="hdr"></header>
 
 
-        <div class="header">
-            Header
+    <div class="about-container">
+
+        <div class="image">
+            <img class="ab" src="images/about/ab.jpeg" alt="">
         </div>
 
-        <!-- Sidebar -->
-        <div class="leftpanel">
-            <div id="nav"> </div>
-        </div>
+         <div class="text">
+             <h4>Comfort and excellence</h4>
+             <p>BlueSofa is a group of textile engineers and designers with a long experience in all segments
+             of furniture production. We put lot of energy behind every step of this process -
+         from studying raw materials to design and ergonomics. Our customers should enjoy
+          comfort, durability and aesthetics at reasonable price - without compromise. </p>
+          <p>We offer handmade furniture tailored to customers' needs: from luxury design to
+          modern minimalism. Besides new furniture we also offer restauration.
+          During the past ten years our furniture has reached a wide range of customers - from private
+          individuals to hotels, restaurants, and numerous offices. </p>
+          <p>Feel free to contact us for more information. Our team is happy to answer your questions and
+          give you more details about production, transport, waiting times and costs. Welcome! </p>
+         </div>
 
-        <!-- Content -->
-        <div class="content">
-            <p> Main content here.. </p>
-        </div>
-
-
-
-        <!-- Footer -->
-        <div class="footer">
-            <div id="ftr"> </div>
-        </div>
     </div>
+
+    <main>
+    </main>
+
+    <!-- Footer -->
+    <footer id="ftr"></footer>
+
+
 
 </body>
 
 </html>
+
