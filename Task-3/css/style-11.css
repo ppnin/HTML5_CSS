@@ -1,7 +1,6 @@
 
 
 
-
 body {
   margin: 0;
   display: grid;
@@ -389,6 +388,29 @@ a {
   height: 30px;
   padding-top: 15px;
 }
+
+
+/*-----------------------
+        about
+-----------------------*/
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container .image .ab {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-container .text {
+  font-size: 14px;
+  padding-left: 20px;
+}
+
 
 
 /*-----------------------
